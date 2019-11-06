@@ -1,0 +1,374 @@
+*{
+box-sizing: border-box;
+}
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+a.imagelightbox-close {
+    background: lightgrey;
+}
+ #myUL {
+    /* Remove default list styling */
+    list-style-type: none;   
+    padding: 0;
+    margin: auto;
+}
+#myUL li{
+    width: 80%;
+    margin: 1% 10%;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px lightgrey;
+}
+
+#myUL li a {
+    text-decoration: none; /* Remove default text underline */
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #468847;
+    width: 100%;
+    margin: 0 3px;
+    width: 206px;
+    border-radius: 20px;
+}
+#myUL a:first-child{
+    overflow: hidden;
+}
+#myUL img{
+    width: 206px;
+    height: 206px;
+    border-radius: 20px;
+    transform: scale(1.05);
+    transition: transform 1.25s;
+}
+#myUL img:hover{
+    transform: scale(.90);
+}
+.imagelightbox-overlay {
+    background: #e6e6fa;
+    }
+#myUL a:last-child:hover{
+    color: #294429;
+    background: #ffffcc;
+    border-radius: 10px;
+/*    padding: 0 5px;*/
+    transition: 1s;
+}
+/***************** styling the js created div, ul and li els in the header ************************/
+#values div{
+/*    margin: 0 50px;*/
+    display: inline-block;
+}
+
+#values ul{
+  margin-top: 50px;
+  padding: 10px 50px;
+  background: lightgrey;
+  color: #008000;
+  box-shadow: 2px 2px 5px #008000;
+  border-radius: 20px;
+}
+
+
+/**************** styling the popup images in the plugin link *****************/
+#imagelightbox{
+   border-radius: 10px;
+   width: 400px;
+   height: 500px;
+    
+}
+
+/* Global Layout Set-up */
+
+h2,h3{
+    text-align: center;
+}
+/*remove dots from ul*/
+ul {
+  list-style-type: none;
+ }
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  z-index: 1000;
+}
+.main-nav ul li .selected {
+  color: white;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white;
+}
+header {
+  text-align: center;
+  background: url('../images/background.experience.jpg') no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  border: 3px solid black;
+  transition: all 0.2s;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+.location {
+  background-color: #222;
+  color: yellow;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card-contact{
+    margin: auto;
+    width: 80%;
+}
+.card:hover {
+  border-color: #b3cccc;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/*************
+EXPERIENCE
+***************/
+
+.tennis {
+  max-width:200px;
+  padding: 0 10px;
+  margin: 0 10px;
+  border-radius: 10%;
+  float: left;
+}
+p {
+  font-weight: normal;
+}
+
+/*************
+CONTACT
+****************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info .mail a {
+  background-image: url('../images/mail.png');
+}
+.contact-info .twitter a {
+  background-image: url('../images/twitter.png');
+}
+.contact-info .phone a {
+  background-image: url('../images/phone.png');
+}
+.contact-info .linkedin a {
+  background-image: url('../images/linkedin.png');
+}
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding:0 0 0 30px;
+}
+.card-contact{
+    margin-top: 40px;
+    background: #ffffe6;
+}
+
+
+
+
+
+/************************
+MEDIA QUERY 768px
+*************************************/
+
+@media (min-width: 768px) {
+
+/*   ****************** MAKE THE LISTS WITH PROJECTS 2 ROWS LAYOUT*/
+    #myUL{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #myUL li {
+        margin: 5px 0;
+        padding: 20px 0 2px;
+        width: 40%;
+    }
+    
+/*    ***************** about me, contact and footer 2 columns layout ******************/
+      
+   .card-contact{
+       width: 35%;
+       height: 220px;
+    }
+    
+  .flex {
+      display: -ms-flexbox;      
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+  header {
+    min-height: 470px;
+  }
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+    
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
+
+/******************************
+      MEDIA QUERY 1024px
+***********************************/
+
+@media (min-width: 1024px) {
+  body{
+    background: #f2eee5;
+ }
+    
+  img {
+    padding: 20px;  
+ }
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*    3 rows layout for the list items with the projects*/
+    #myUL li{
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+
+
