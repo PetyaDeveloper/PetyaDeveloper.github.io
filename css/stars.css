@@ -1,0 +1,81 @@
+/* --------------------------
+  Base
+--------------------------- */
+
+svg{
+	margin: auto;
+    display: block;
+	width: 200px;
+    height: 250px;
+    background: white;
+    box-shadow: 5px 5px 5px lightyellow;
+    padding: 0 5px;
+}
+.stars{
+    stroke: grey;
+  stroke-width: 5;
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+@keyframes offset{
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill-up{
+  100%{
+/*    fill: #bfff00;*/
+      fill: grey;
+  }
+}
+@keyframes turn{
+  30%{
+    transform: rotate(180deg);
+  }
+  60%{
+    transform: rotate(-10deg);
+  }
+}
+/* --------------------------
+  SVG Styles
+--------------------------- */
+.stars{
+  transform-origin: 348px 356px;
+}
+.stars:hover .stars-bg{
+/*  stroke: #bfff00;*/
+    stroke: grey;
+  stroke-width: 5;
+  stroke-dasharray: 810;
+  stroke-dashoffset: 810;
+  animation: offset 3s forwards;
+}
+.star{
+  transform-origin: 348px 356px;
+}
+
+.stars:hover .star{
+  stroke: grey;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: fill-up 3s 4s ease-out forwards, offset 4s linear forwards;
+}
+
+/*static-stars styling*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
