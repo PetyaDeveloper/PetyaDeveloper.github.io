@@ -83,9 +83,11 @@ a.imagelightbox-close {
    border-radius: 10px;
    width: 400px;
    height: 500px;
-    
 }
 
+.stars-hide{
+    display: none;
+}
 /* Global Layout Set-up */
 
 h2,h3{
@@ -242,31 +244,42 @@ CONTACT
 }
 #contact ul{
 /*    border: 2px dotted tomato;*/
-    display: block;
+    padding-left: 25%;
 }
-
+/**********************************************
+        styling the contact svg images
+****************************************/
 /*
-.contact-info .mail a {
-  background-image: url('../images/mail.png');
+.svg{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
 }
-.contact-info .twitter a {
-  background-image: url('../images/twitter.png');
-}
-.contact-info .phone a {
-  background-image: url('../images/phone.png');
-}
-.contact-info .linkedin a {
-  background-image: url('../images/linkedin.png');
+.card-contact a{
+   display: inline-block;
+   padding-top: -10px;
 }
 */
+
+.contact-info .mail a {
+  background-image: url('../images/email.svg');
+}
+.contact-info .twitter a {
+  background-image: url('../images/twitter.svg');
+}
+.contact-info .phone a {
+  background-image: url('../images/mobile.svg');
+}
+.contact-info .linkedin a {
+  background-image: url('../images/linkedin.svg');
+}
 .contact-info a {
-  display: block;
+  display: inline-block;
   min-height: 20px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
   padding:0 0 0 30px;
 }
-
 
 
 /************************
