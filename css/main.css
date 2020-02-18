@@ -88,14 +88,7 @@ a.imagelightbox-close {
    width: 400px;
    height: 500px;
 }
-
-/*
-.stars-hide{
-    display: none;
-}
-*/
 /* Global Layout Set-up */
-
 h2,h3{
     text-align: center;
 }
@@ -110,9 +103,9 @@ a {
   text-decoration: none;
   color: #999;
 }
-a:hover {
+/* a:hover {
   color: #6633ff;
-}
+} */
 
 /* Section Styles */
 
@@ -187,7 +180,8 @@ header .profile-image:hover {
   color: yellow;
 }
 .card {
-  margin: 30px;
+  margin: 30px auto;
+  /* margin: 30px; */
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
