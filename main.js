@@ -17,13 +17,21 @@ console.log(navLink);
 //      }
 //   }
 //});
-$('.chit-chat').on('click', function(e){
-   const replaceText = `<div><ul class="moto">
+
+$('.moto').on('click', function(e){
+   const replaceTextOne = `<div><ul class="moto">
                              <li>Let's make clean and beautiful code</li>
                              <li>Let's have fun while doing it</li>
-                             <li>Keep growing</li>
-                        </ul></div>` 
-   document.getElementById('values').innerHTML = replaceText;
+                             <li>Upwards and onwards</li>
+                             </ul></div>` 
+////    const replaceTextOne = `<p id="moto">Lets make clean and beautiful code</p>`;
+//   const replaceTextTwo = `
+//                             <p>Let's have fun while doing it</p>
+//                        ` 
+   document.getElementById('values').innerHTML = replaceTextOne;
+    $('.moto').slideUp(2000).slideDown(2000);
+
+                             
 });
 
 //// adding contact svg logos on the header
@@ -37,11 +45,11 @@ $('.nav').on('click', function(e){
       }
    }
 });
-$('.contact').on('click', function(e){
-   const replaceText = `<div id="contact"><ul>
-                             <li>svg1</li>
-                             <li>Let's have fun while doing it</li>
-                             <li>Keep growing</li>
-                        </ul></div>` 
-   document.getElementById('values').innerHTML = replaceText;
-});
+//$('.contact').on('click', function(e){
+//   const replaceText = `<div id="contact"><ul>
+//                             <li>svg1</li>
+//                             <li>Let's have fun while doing it</li>
+//                             <li>Keep growing</li>
+//                        </ul></div>` 
+//   document.getElementById('values').innerHTML = replaceText;
+//});

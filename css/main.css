@@ -14,6 +14,9 @@ body {
 a.imagelightbox-close {
     background: lightgrey;
 }
+/**********************************
+     ul with pictures jpg, png and svg with links for the lightbox and specific project
+********************************/
  #myUL {
     /* Remove default list styling */
     list-style-type: none;   
@@ -41,14 +44,14 @@ a.imagelightbox-close {
 #myUL a:first-child{
     overflow: hidden;
 }
-#myUL img{
+#myUL img, #myUL svg{
     width: 206px;
     height: 206px;
     border-radius: 20px;
     transform: scale(1.05);
     transition: transform 1.25s;
 }
-#myUL img:hover{
+#myUL img:hover, #myUL svg:hover{
     transform: scale(.90);
 }
 .imagelightbox-overlay {
@@ -85,9 +88,11 @@ a.imagelightbox-close {
    height: 500px;
 }
 
+/*
 .stars-hide{
     display: none;
 }
+*/
 /* Global Layout Set-up */
 
 h2,h3{
@@ -239,8 +244,6 @@ CONTACT
 
 .contact-info {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 #contact ul{
 /*    border: 2px dotted tomato;*/
@@ -249,18 +252,52 @@ CONTACT
 /**********************************************
         styling the contact svg images
 ****************************************/
-/*
 .svg{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    fill: olivedrab;
 }
-.card-contact a{
-   display: inline-block;
-   padding-top: -10px;
+.contact-info li{
+  display: flex;
+  flex-direction: row;
+  height: 30px;
 }
-*/
-
+.contact-info a{
+  padding-left: 10px;
+  color: olivedrab;
+}
+.contact-info li{
+  transition: transform 1s ease-out;
+}
+.contact-info li:hover{
+  transform: scale(1.2) skewX(20deg);
+}
+/* animation of the contact svg images */
+@keyframes turn{
+  0%{
+    transform: rotate(0) scale(0);
+  }
+  60%{
+    transform: rotate(375deg) scale(1.1);
+  }
+  80%{
+    transform: rotate(355deg) scale(0.9);
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+  }
+}
+.contact-info li:hover .svg{
+  animation: turn .7s .5s;
+}
+/* .contact-info li:first-child:hover{
+  transform: skewX(45deg);
+} */
+/* .contact-info li{
+  border: 2px solid tomato;
+} */
+/*
 .contact-info .mail a {
   background-image: url('../images/email.svg');
 }
@@ -273,13 +310,14 @@ CONTACT
 .contact-info .linkedin a {
   background-image: url('../images/linkedin.svg');
 }
-.contact-info a {
+*/
+/* .contact-info a {
   display: inline-block;
   min-height: 20px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
   padding:0 0 0 30px;
-}
+} */
 
 
 /************************
