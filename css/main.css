@@ -42,9 +42,9 @@ a.imagelightbox-close {
     width: 206px;
     border-radius: 20px;
 }
-#myUL a:first-child{
+/* #myUL a:first-child{
     overflow: hidden;
-}
+} */
 #myUL img{
     width: 206px;
     height: 206px;
@@ -73,11 +73,11 @@ a.imagelightbox-close {
 }
 
 #values ul{
-  margin-top: 50px;
+  margin-top: 100px;
   padding: 10px 50px;
   background: lightgrey;
-  color: #008000;
-  box-shadow: 2px 2px 5px #008000;
+  color:black;
+  box-shadow: 2px 2px 5px darkslategrey;
   border-radius: 20px;
 }
 
