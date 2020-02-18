@@ -24,7 +24,7 @@ a.imagelightbox-close {
     margin: auto;
 }
 #myUL li{
-    width: 80%;
+    width: 90%;
     margin: 1% 10%;
     margin: auto;
     padding: 2rem 4rem; 
@@ -42,12 +42,13 @@ a.imagelightbox-close {
     width: 206px;
     border-radius: 20px;
 }
-/* #myUL a:first-child{
+#myUL a:first-child{
     overflow: hidden;
-} */
+}
 #myUL img{
     width: 206px;
     height: 206px;
+    margin: auto;
     border-radius:20px;
     transition: transform 1.25s;
 }
@@ -133,11 +134,16 @@ a {
 }
 .nav li {
   padding: 5px 10px 10px 10px;
+
 }
 .nav a {
   transition: all .5s;
 }
 .nav a:hover {
+  color: lightslategrey;
+}
+/* changing the purple nav links into white */
+.nav li a{
   color: white;
 }
 header {

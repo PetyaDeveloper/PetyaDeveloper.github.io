@@ -1,16 +1,12 @@
-// nav links asigning class active
-const nav = document.querySelector('.nav');
-let navLink = document.querySelectorAll('.nav a');
-console.log(navLink);
 
 $('.moto').on('click', function(e){
-   const replaceTextOne = `<div><ul class="moto">
+   const replaceTextOne = `<div><ul class="bu">
                              <li>Let's make clean and beautiful code</li>
                              <li>Let's have fun while doing it</li>
                              <li>Upwards and onwards</li>
                              </ul></div>` 
    document.getElementById('values').innerHTML = replaceTextOne;
-    $('.moto').slideUp(2000).slideDown(2000);
+    $('.bu').slideUp(2000).slideDown(2000);
 
                              
 });
