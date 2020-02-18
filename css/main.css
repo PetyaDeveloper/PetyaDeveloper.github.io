@@ -47,12 +47,13 @@ a.imagelightbox-close {
 #myUL img, #myUL svg{
     width: 206px;
     height: 206px;
-    border-radius: 20px;
+    border-radius:20px;
     transform: scale(1.05);
     transition: transform 1.25s;
 }
 #myUL img:hover, #myUL svg:hover{
     transform: scale(.90);
+
 }
 .imagelightbox-overlay {
     background: #e6e6fa;
@@ -164,15 +165,14 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 20%;
-  border: 3px solid black;
-  transition: all 0.2s;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  width: 200px;
+  height: 200px;
 }
 .tag {
   background-color: #efefef;
