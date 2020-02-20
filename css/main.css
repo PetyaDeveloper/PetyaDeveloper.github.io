@@ -36,7 +36,7 @@ a.imagelightbox-close {
     text-decoration: none; /* Remove default text underline */
     display: inline-block;
     padding-bottom: 10px;
-    color: dqrkgrey;
+    color:#808080;
     width: 100%;
     margin: 0 3px;
     width: 206px;
@@ -58,7 +58,7 @@ a.imagelightbox-close {
     }
 #myUL a:last-child:hover{
     color: white;
-    background:  #294429;
+    background: #808080;
     border-radius: 10px;
 /*    padding: 0 5px;*/
     transition: 1s;
@@ -154,23 +154,28 @@ header {
 header {
   line-height: 1.5;
 }
+header .name{
+  font-size: 1.5em;
+  color: #E0E0E0e;
+}
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #E8E8E8;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
   width: 200px;
   height: 200px;
+  border: 3px solid yellow;
 }
 .tag {
-  background-color: #efefef;
-  color: black;
-  padding: 10px;
+  background-color: black;
+  color: #E8E8E8;
+  padding: 3px 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
@@ -197,6 +202,9 @@ header .profile-image:hover {
 
 footer ul li {
   display: inline-block;
+}
+footer p{
+  font-size: .7em;
 }
 
  a.social {
@@ -245,7 +253,7 @@ CONTACT
     width: 20px;
     height: 20px;
     padding: 0;
-    fill: olivedrab;
+    fill: #808080;
 }
 .contact-info li{
   display: flex;
@@ -254,7 +262,7 @@ CONTACT
 }
 .contact-info a{
   padding-left: 10px;
-  color: olivedrab;
+  color:#808080;
 }
 .contact-info li{
   transition: transform 1s ease-out;
