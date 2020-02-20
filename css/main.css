@@ -36,15 +36,12 @@ a.imagelightbox-close {
     text-decoration: none; /* Remove default text underline */
     display: inline-block;
     padding-bottom: 10px;
-    color: #468847;
+    color: dqrkgrey;
     width: 100%;
     margin: 0 3px;
     width: 206px;
     border-radius: 20px;
 }
-/* #myUL a:first-child{
-    overflow: hidden;
-} */
 #myUL img{
     width: 206px;
     height: 206px;
@@ -52,7 +49,7 @@ a.imagelightbox-close {
     border-radius:20px;
     transition: transform 1.25s;
 }
-#myUL img:hover{
+#myUL img:hover, #myUL svg{
     transform: scale(.90);
 }
 
@@ -60,11 +57,12 @@ a.imagelightbox-close {
     background: #e6e6fa;
     }
 #myUL a:last-child:hover{
-    color: #294429;
-    background: #ffffcc;
+    color: white;
+    background:  #294429;
     border-radius: 10px;
 /*    padding: 0 5px;*/
     transition: 1s;
+    padding-top: 10px;
 }
 /***************** styling the js created div, ul and li els in the header ************************/
 #values div{
