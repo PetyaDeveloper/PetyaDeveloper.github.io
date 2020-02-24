@@ -17,7 +17,7 @@ $('.nav').on('click', function(e){
       if(e.target.textContent !== 'Moto'){
           const originalText = `<img src="images/petya.jpg" alt="Picture of Petya Katsarova" class="profile-image">
                                 <h1 class="tag name">Hello, I’m Petya.</h1>
-                                <p class="tag location">You can find me in Dubai, UAE or somewhere around the world, travelling.</p>`
+                                <p class="tag location">You can find me in Plovdiv, Bulgaria or somewhere around the world, travelling.</p>`
           document.getElementById('values').innerHTML = originalText;
       }
    }
